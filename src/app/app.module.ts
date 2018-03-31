@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
