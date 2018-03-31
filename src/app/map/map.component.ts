@@ -32,7 +32,7 @@ export class MapComponent implements AfterViewInit {
     this.load.loadScript(url, 'gmap', () => {
       const maps = window['google']['maps'];
       console.log(maps);
-      const loc = new maps.LatLng(51.561638, -0.14);
+      const loc = new maps.LatLng(37.970775, 23.760588);
 
       const darkmap = new maps.StyledMapType(styledMap, { name: 'Dark Map' });
 
@@ -41,7 +41,7 @@ export class MapComponent implements AfterViewInit {
       };
 
       this.map = new maps.Map(this.mapElm.nativeElement, {
-        zoom: 11,
+        zoom: 7,
         center: loc,
         scrollwheel: true,
         panControl: false,
@@ -60,7 +60,7 @@ export class MapComponent implements AfterViewInit {
       const locControl = document.getElementById('location-buttons');
       this.map.controls[maps.ControlPosition.TOP_CENTER].push(locControl);
 
-      this.map.data.loadGeoJson('assets/lonely.geojson');
+      this.map.data.loadGeoJson('assets/tents.geojson');
       this.map.data.addListener('mouseover', (function(e) {
         this.legend.nativeElement.style.display = 'block';
         this.infoBox.nativeElement.innerText = e.feature.getProperty('PREVALENCE');
@@ -69,14 +69,20 @@ export class MapComponent implements AfterViewInit {
         this.legend.nativeElement.style.display = 'none';
       }).bind(this));
       this.map.data.setStyle(function(feature) {
-        const lon = feature.getProperty('PREVALENCE');
-        const value = 255 - Math.round(mapNumber(lon, 0, 5, 0, 255));
-        const color = 'rgb(' + value + ',' + value + ',' + 0 + ')';
-        return {
-          fillColor: color,
-          strokeWeight: 1
-        };
-      });
+
+        return /** @type {google.maps.Data.StyleOptions} */({
+          icon: 'assets/tent.png'
+        });
+        });
+      // this.map.data.setStyle(function(feature) {
+      //   const lon = feature.getProperty('PREVALENCE');
+      //   const value = 255 - Math.round(mapNumber(lon, 0, 5, 0, 255));
+      //   const color = 'rgb(' + value + ',' + value + ',' + 0 + ')';
+      //   return {
+      //     fillColor: color,
+      //     strokeWeight: 1
+      //   };
+      // });
 
       const antenna = new maps.MarkerImage('assets/antennabl.png',
         null,
