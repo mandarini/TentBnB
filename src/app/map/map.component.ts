@@ -1,9 +1,6 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { ScriptLoadService } from '../script-load.service';
-import { HttpClient } from '@angular/common/http';
-import { mapNumber } from '../../assets/functions/mapNumber';
 import { styledMap } from '../../assets/mapStylingMaterial/styledMap';
-import { customGradient } from '../../assets/mapStylingMaterial/gradient';
 
 const your_API_key = 'AIzaSyAwVnwE1bEZf_Bkk_pSkGM0XlBSXJocVUY';
 const url = 'https://maps.googleapis.com/maps/api/js?key=' + your_API_key + '&libraries=visualization';
@@ -21,10 +18,11 @@ export class MapComponent implements AfterViewInit {
 
   private map: any;
   private coords: any;
+  private infowindow: any;
   lettings: string[];
   masts: string[];
 
-  constructor(private load: ScriptLoadService, private http: HttpClient) {
+  constructor(private load: ScriptLoadService) {
   }
 
   ngAfterViewInit(): void {
@@ -60,50 +58,31 @@ export class MapComponent implements AfterViewInit {
       const locControl = document.getElementById('location-buttons');
       this.map.controls[maps.ControlPosition.TOP_CENTER].push(locControl);
 
+      this.infowindow = new google.maps.InfoWindow();
+
       this.map.data.loadGeoJson('assets/tents.geojson');
-      this.map.data.addListener('mouseover', (function(e) {
-        this.legend.nativeElement.style.display = 'block';
-        this.infoBox.nativeElement.innerText = e.feature.getProperty('PREVALENCE');
+      this.map.data.addListener('click', (function(e) {
+        this.infowindow.setPosition(e.feature.getGeometry().get());
+        this.infowindow.setContent(`<p><b>ID Skinis:</b> ${e.feature.getProperty('id')}</p>
+        <p><b>Perigrafi:</b> ${e.feature.getProperty('description')}</p>
+        <p><b>Timi (low season</b> ${e.feature.getProperty('price')} EUR /night</p>
+        <p><b>Timi (high season)</b> ${e.feature.getProperty('high-price')}  EUR /night</p>
+        `)
+        this.infowindow.open(this.map);
       }).bind(this));
-      this.map.data.addListener('mouseout', (function(e) {
-        this.legend.nativeElement.style.display = 'none';
-      }).bind(this));
+
       this.map.data.setStyle(function(feature) {
-
+          let icon =new maps.MarkerImage('assets/tent.png',
+            null,
+            null,
+            null,
+            new maps.Size(25, 25)
+          );
         return /** @type {google.maps.Data.StyleOptions} */({
-          icon: 'assets/tent.png'
+          icon: icon
         });
         });
-      // this.map.data.setStyle(function(feature) {
-      //   const lon = feature.getProperty('PREVALENCE');
-      //   const value = 255 - Math.round(mapNumber(lon, 0, 5, 0, 255));
-      //   const color = 'rgb(' + value + ',' + value + ',' + 0 + ')';
-      //   return {
-      //     fillColor: color,
-      //     strokeWeight: 1
-      //   };
-      // });
 
-      const antenna = new maps.MarkerImage('assets/antennabl.png',
-        null,
-        null,
-        null,
-        new maps.Size(25, 40)
-      );
-
-      this.http.get('assets/masts.json').subscribe(data => {
-        this.masts = data['data'];
-        console.log(this.masts[0][17]); // longitude
-        console.log(this.masts[0][18]); // latitude
-
-        this.masts.map(x => {
-          new maps.Marker({
-            position: new maps.LatLng(x[18], x[17]),
-            icon: antenna,
-            // map: this.map
-          });
-        });
-      });
     });
   }
 

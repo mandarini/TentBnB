@@ -9,7 +9,8 @@
         "marker-symbol": "",
         "description": "Skini 2 atomon sto palio camping mesa sto kouvouklio. Exei ginei sinenoisi me idioktiti.",
         "price": 15,
-        "high-price": 20
+        "high-price": 20,
+        "id": 1
       },
       "geometry": {
         "type": "Point",
@@ -27,8 +28,9 @@
         "marker-symbol": "",
         "description": "Skini stimeni mesa sto palio kafeneio tou camping (to \"kapsimi\"). Xorane 3 atoma kai xoros ap ekso gia aragma kai kouzina. ",
         "price": 20,
-        "high-price": 25
-      },
+        "high-price": 25,
+        "id": 2
+  },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -45,7 +47,8 @@
         "marker-symbol": "",
         "description": "Skinoula 2 atomon xoris skia, kai enoxlei kai ligo i mousiki apo to kalofeggo. Aeras kovei logo kataskevis.",
         "price": 8,
-        "high-price": 12
+        "high-price": 12,
+        "id": 3
       },
       "geometry": {
         "type": "Point",
@@ -63,7 +66,8 @@
         "marker-symbol": "",
         "description": "skini 2 atomon sto xorafi dipla sto kalofeggo. Kovei ligo o aeras logo thamnon. as apofevgetai periodo meltemion.",
         "price": 12,
-        "high-price": 15
+        "high-price": 15,
+        "id": 4
       },
       "geometry": {
         "type": "Point",
@@ -81,7 +85,8 @@
         "marker-symbol": "",
         "description": "Aiora sto dentro ton hippidon. Ton augusto den einai diathesimi, giati to dentro prepei na anoikei se olous.",
         "price": 6,
-        "high-price": 9
+        "high-price": 9,
+        "id": 4
       },
       "geometry": {
         "type": "Point",
@@ -99,7 +104,8 @@
         "marker-symbol": "",
         "description": "skini 4 atomon me xoro gia kouzina.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 5
       },
       "geometry": {
         "type": "Point",
@@ -117,7 +123,8 @@
         "marker-symbol": "",
         "description": "skini 2 atomon, gia zevgari. einai pano sto \"skalopati\" sto terma tou faraggiou. skia oli mera. asfaleia apo katsikia.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 6
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +142,8 @@
         "marker-symbol": "",
         "description": "skini 3 atomon konta stin eisodo kai tin toualeta. skia mexri tis 10 logo xamilou thamnou-skinou apo dipla.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 7
       },
       "geometry": {
         "type": "Point",
@@ -153,7 +161,8 @@
         "marker-symbol": "",
         "description": "Skini 4 atomon me kavatza gia aragma sto mono dentro tou \"Camping\" (to mono kanoniko dentro, ta alla einai thamnoi).",
         "price ": 15,
-        "high-price": 18
+        "high-price": 18,
+        "id": 8
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +180,8 @@
         "marker-symbol": "",
         "description": "Skini gia 3 atoma stin paralia Psili Ammo, pano stin anifora me tous kedrous. Exei skia mexri tis 9, meta skaei ilios",
         "price": 5,
-        "high-price": 5
+        "high-price": 5,
+        "id": 9
       },
       "geometry": {
         "type": "Point",
@@ -189,7 +199,8 @@
         "marker-symbol": "",
         "description": "Skini gia 1 atomo, mikri xamili, exei skia oli mera, xomeni kato apo kedro sto vouno.",
         "price": 3,
-        "high-price": 3
+        "high-price": 3,
+        "id": 10
       },
       "geometry": {
         "type": "Point",
@@ -206,7 +217,9 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "description": "due tende per famiglia di quattro persone",
-        "price": 18
+        "price": 18,
+        "high-price": 20,
+        "id": 11
       },
       "geometry": {
         "type": "Point",
@@ -224,7 +237,8 @@
         "marker-symbol": "",
         "description": "Skini me skia mexri to mesimeri stin psilli ammo. Extra xoros gia kavatza. Xorane 3-4 atoma.",
         "price": 12,
-        "high-price": 17
+        "high-price": 17,
+        "id": 12
       },
       "geometry": {
         "type": "Point",
@@ -242,7 +256,8 @@
         "marker-symbol": "",
         "description": "2 skinoules sto camping se poly kalo simeio me isixia. Exei ginei sinennoisi me idioktitria. exoun kai stromataki.",
         "price": 15,
-        "high-price": 17
+        "high-price": 17,
+        "id": 13
       },
       "geometry": {
         "type": "Point",
@@ -260,7 +275,8 @@
         "marker-symbol": "",
         "description": "2 skinoules sto camping se poly kalo simeio me isixia. Exei ginei sinennoisi me idioktitria. exoun kai stromataki.",
         "price": 15,
-        "high-price": 17
+        "high-price": 17,
+        "id": 14
       },
       "geometry": {
         "type": "Point",
@@ -278,7 +294,8 @@
         "marker-symbol": "lodging",
         "description": "Skinoula gia zevgari prosfero sti Sikino se iremi paralia, se ena iremo ma omorfo nisaki.",
         "price": 5,
-        "high-price": 7
+        "high-price": 7,
+        "id": 15
       },
       "geometry": {
         "type": "Point",
@@ -296,7 +313,8 @@
         "marker-symbol": "",
         "description": "Skines 2 gia 3 atoma ekasti, sto piso meros tou camping, stin isixi zoni.",
         "price": 8,
-        "high-price": 12
+        "high-price": 12,
+        "id": 16
       },
       "geometry": {
         "type": "Point",
@@ -314,7 +332,8 @@
         "marker-symbol": "",
         "description": "Skines 2 gia 3 atoma ekasti, sto piso meros tou camping, stin isixi zoni.",
         "price": 8,
-        "high-price": 12
+        "high-price": 12,
+        "id": 17
       },
       "geometry": {
         "type": "Point",
@@ -332,7 +351,8 @@
         "marker-symbol": "",
         "description": "skini sto piso meros tis paralias, sti skia. exei sxetiki isixia, sxetiki skia, kai xoro gia saloni-kouzina.",
         "price": 15,
-        "high-price": 18
+        "high-price": 18,
+        "id": 18
       },
       "geometry": {
         "type": "Point",
@@ -350,7 +370,8 @@
         "marker-symbol": "",
         "description": "skini sto piso meros tis paralias, sti skia. exei sxetiki isixia, sxetiki skia, kai xoro gia saloni-kouzina.",
         "price": 15,
-        "high-price": 18
+        "high-price": 18,
+        "id": 19
       },
       "geometry": {
         "type": "Point",
@@ -368,7 +389,8 @@
         "marker-symbol": "",
         "description": "skini sto piso meros tis paralias, sti skia. exei sxetiki isixia, sxetiki skia, kai xoro gia saloni-kouzina.",
         "price": 15,
-        "high-price": 18
+        "high-price": 18,
+        "id": 20
       },
       "geometry": {
         "type": "Point",
@@ -386,7 +408,8 @@
         "marker-symbol": "",
         "description": "skini sto piso meros tis paralias, sti skia. exei sxetiki isixia, sxetiki skia, kai xoro gia saloni-kouzina.",
         "price": 15,
-        "high-price": 18
+        "high-price": 18,
+        "id": 21
       },
       "geometry": {
         "type": "Point",
@@ -404,7 +427,8 @@
         "marker-symbol": "",
         "description": "skini 3 atomon me kavatza sto katsouni. iparxei diamorfosi me votsala ston perivalonta xoro.",
         "price": 12,
-        "high-price": 15
+        "high-price": 15,
+        "id": 22
       },
       "geometry": {
         "type": "Point",
@@ -422,7 +446,8 @@
         "marker-symbol": "",
         "description": "skini gia parea me xoro gia kouzina. exei diamorfosi me votsala.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 23
       },
       "geometry": {
         "type": "Point",
@@ -440,7 +465,8 @@
         "marker-symbol": "",
         "description": "skini gia zevgari, me atomiko monopataki kai xoro gia aiora.",
         "price": 10,
-        "high-price": 12
+        "high-price": 12,
+        "id": 24
       },
       "geometry": {
         "type": "Point",
@@ -458,7 +484,8 @@
         "marker-symbol": "",
         "description": "Prive skines kato apo kedrous. Gia zevgaria. Xoros gia saloni. Kleinontai ksexorista.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 25
       },
       "geometry": {
         "type": "Point",
@@ -476,7 +503,8 @@
         "marker-symbol": "",
         "description": "Prive skines kato apo kedrous. Gia zevgaria. Xoros gia saloni. Kleinontai ksexorista.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 26
       },
       "geometry": {
         "type": "Point",
@@ -494,7 +522,8 @@
         "marker-symbol": "",
         "description": "Prive skines kato apo kedrous. Gia zevgaria. Xoros gia saloni. Kleinontai ksexorista.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 27
       },
       "geometry": {
         "type": "Point",
@@ -512,7 +541,8 @@
         "marker-symbol": "",
         "description": "skini stin anifora ston a-gianni. kali skia kai xoros gia kouzina.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 28
       },
       "geometry": {
         "type": "Point",
@@ -530,8 +560,9 @@
         "marker-symbol": "",
         "description": "una tenda per 3 persone con cucina",
         "price": 9,
-        "high-price": 14
-      },
+        "high-price": 14,
+        "id": 38
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -548,7 +579,8 @@
         "marker-symbol": "",
         "description": "2 skines ston Potamo, me diamorfosi eksoterikou xorou apo laspi, ilika tis fisis kai votsala. Skia oli mera me orea kavatzoula to vrady.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 29
       },
       "geometry": {
         "type": "Point",
@@ -566,7 +598,8 @@
         "marker-symbol": "",
         "description": "2 skines ston Potamo, me diamorfosi eksoterikou xorou apo laspi, ilika tis fisis kai votsala. Skia oli mera me orea kavatzoula to vrady.",
         "price": 10,
-        "high-price": 15
+        "high-price": 15,
+        "id": 30
       },
       "geometry": {
         "type": "Point",
@@ -584,7 +617,8 @@
         "marker-symbol": "",
         "description": "skini 2 atomon sto Lavraka. Skia kai plision tou pigadiou.",
         "price": 8,
-        "high-price": 12
+        "high-price": 12,
+        "id": 31
       },
       "geometry": {
         "type": "Point",
@@ -602,7 +636,8 @@
         "marker-symbol": "",
         "description": "Diatithentai 3 skines sto dasos tis Grias. Fovera aneto elefthero camping logo tis eggytitas sto potami alla kai tis paxias skias pou prosferei to dasos kai ta plataneia. Diatithentai xorista i oles mazi me prosfora 10%.",
         "price": 14,
-        "high-price": 17
+        "high-price": 17,
+        "id": 32
       },
       "geometry": {
         "type": "Point",
@@ -620,7 +655,8 @@
         "marker-symbol": "",
         "description": "Diatithentai 3 skines sto dasos tis Grias. Fovera aneto elefthero camping logo tis eggytitas sto potami alla kai tis paxias skias pou prosferei to dasos kai ta plataneia. Diatithentai xorista i oles mazi me prosfora 10%.",
         "price": 14,
-        "high-price": 17
+        "high-price": 17,
+        "id": 33
       },
       "geometry": {
         "type": "Point",
@@ -638,7 +674,8 @@
         "marker-symbol": "",
         "description": "Diatithentai 3 skines sto dasos tis Grias. Fovera aneto elefthero camping logo tis eggytitas sto potami alla kai tis paxias skias pou prosferei to dasos kai ta plataneia. Diatithentai xorista i oles mazi me prosfora 10%.",
         "price": 14,
-        "high-price": 17
+        "high-price": 17,
+        "id": 34
       },
       "geometry": {
         "type": "Point",
@@ -656,7 +693,8 @@
         "marker-symbol": "",
         "description": "Monadiki efkairia sto apeirou kalous nisi Alonisos. Skini gia 7 koritsia me xoro gia kouzina, saloni kai aiores. Plision kentron diaskedaseos alla kai thalasiou parkou fokias. Aksizei toso oso kai i episkepsi sto monadiko afto nisi.",
         "price": 5,
-        "high-price": 7
+        "high-price": 7,
+        "id": 35
       },
       "geometry": {
         "type": "Point",
@@ -674,7 +712,8 @@
         "marker-symbol": "",
         "description": "Kavatza me kalamies stin paralia Gaidaros me tin Kantina tou Foti. Xoraei 4 atoma aneta.",
         "price": 10,
-        "high-price": 12
+        "high-price": 12,
+        "id": 36
       },
       "geometry": {
         "type": "Point",
@@ -692,7 +731,8 @@
         "marker-symbol": "",
         "description": "Skini gia parea stin katapliktiki paralia Thapsa!",
         "price": 8,
-        "high-price": 8
+        "high-price": 8,
+        "id": 37
       },
       "geometry": {
         "type": "Point",
