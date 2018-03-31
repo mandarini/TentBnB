@@ -82,7 +82,7 @@ export class MapComponent implements AfterViewInit {
         });
       });
 
-      this.infowindow = new google.maps.InfoWindow();
+      this.infowindow = new maps.InfoWindow();
 
     });
   }
