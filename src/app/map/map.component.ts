@@ -58,7 +58,6 @@ export class MapComponent implements AfterViewInit {
       const locControl = document.getElementById('location-buttons');
       this.map.controls[maps.ControlPosition.TOP_CENTER].push(locControl);
 
-      this.infowindow = new google.maps.InfoWindow();
 
       this.map.data.loadGeoJson('assets/tents.geojson');
       this.map.data.addListener('click', (function(e) {
@@ -72,16 +71,18 @@ export class MapComponent implements AfterViewInit {
       }).bind(this));
 
       this.map.data.setStyle(function(feature) {
-          let icon =new maps.MarkerImage('assets/tent.png',
-            null,
-            null,
-            null,
-            new maps.Size(25, 25)
-          );
+        let icon = new maps.MarkerImage('assets/tent.png',
+          null,
+          null,
+          null,
+          new maps.Size(25, 25)
+        );
         return /** @type {google.maps.Data.StyleOptions} */({
           icon: icon
         });
-        });
+      });
+
+      this.infowindow = new google.maps.InfoWindow();
 
     });
   }
