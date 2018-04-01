@@ -1,3 +1,12 @@
+.full {
+  height: 98vh;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu {
+  text-align: right;
+  z-index: 5;
+}
 
 button, a {
   font-family: sans-serif;

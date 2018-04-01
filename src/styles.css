@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 html, body {
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(209, 239, 245);
+  background-image: url("assets/camping.jpg");
+  background-size: cover;
 }
