@@ -62,10 +62,10 @@ export class MapComponent implements AfterViewInit {
       this.map.data.loadGeoJson('assets/tents.geojson');
       this.map.data.addListener('click', (function(e) {
         this.infowindow.setPosition(e.feature.getGeometry().get());
-        this.infowindow.setContent(`<p><b>ID Skinis:</b> ${e.feature.getProperty('id')}</p>
+        this.infowindow.setContent(`<div class="overlay"><p><b>ID Skinis:</b> ${e.feature.getProperty('id')}</p>
         <p><b>Perigrafi:</b> ${e.feature.getProperty('description')}</p>
         <p><b>Timi (low season</b> ${e.feature.getProperty('price')} EUR /night</p>
-        <p><b>Timi (high season)</b> ${e.feature.getProperty('high-price')}  EUR /night</p>
+        <p><b>Timi (high season)</b> ${e.feature.getProperty('high-price')}  EUR /night</p></div>
         `)
         this.infowindow.open(this.map);
       }).bind(this));

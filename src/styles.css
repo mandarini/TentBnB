@@ -4,3 +4,7 @@ html, body {
   background-image: url("assets/camping.jpg");
   background-size: cover;
 }
+
+.overlay {
+  max-width: 50vw;
+}
