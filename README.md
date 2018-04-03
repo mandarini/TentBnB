@@ -2,14 +2,14 @@
 
 Just a prank for my friends. Nothing serious here.
 
-Angular & Google Maps
+*Using Angular & Google Maps*
 
 See it live [here](https://mandarini.github.io/TentBnB/)
 
 Always useful:
 [angular to gh pages](https://github.com/angular/angular-cli/wiki/stories-github-pages)
 
-Steps for deployment of Angular SPA to github pages:
+##Steps for deployment of an Angular SPA to GitHub pages:
 
 1. Create js file with code from [websemantics/gh-pages-spa](https://github.com/websemantics/gh-pages-spa). 
 Just copy the code from [this](https://github.com/websemantics/gh-pages-spa/blob/master/ghspa.js) file here, and
@@ -59,4 +59,6 @@ it will only work if you specify the whole URL (https://yourusername.github.io/Y
    ```
    ng build --prod --output-path docs --base-href https://yourusername.github.io/YourProject/
    ```
-
+7. As mentioned in the angular-cli relevant tutorial [here](https://github.com/angular/angular-cli/wiki/stories-github-pages), 
+commit your changes and push. 
+On the GitHub project page, configure it to publish from the docs folder.
