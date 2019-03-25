@@ -4,7 +4,7 @@ Just a prank for my friends. Nothing serious here.
 
 *Using Angular & Google Maps*
 
-See it live [here](https://mandarini.github.io/TentBnB/)
+See it live [here](https://psyber,city/TentBnB/)
 
 Always useful:
 [angular to gh pages](https://github.com/angular/angular-cli/wiki/stories-github-pages)
