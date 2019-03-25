@@ -9,7 +9,7 @@ See it live [here](https://psyber.city/TentBnB/)
 Always useful:
 [angular to gh pages](https://github.com/angular/angular-cli/wiki/stories-github-pages)
 
-##Steps for deployment of an Angular SPA to GitHub pages:
+## Steps for deployment of an Angular SPA to GitHub pages:
 
 1. Create js file with code from [websemantics/gh-pages-spa](https://github.com/websemantics/gh-pages-spa). 
 Just copy the code from [this](https://github.com/websemantics/gh-pages-spa/blob/master/ghspa.js) file here, and
